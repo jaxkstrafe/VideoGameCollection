@@ -1,0 +1,69 @@
+﻿@page
+@model VideoGameUI.Pages.AddItems.AddPublisherModel
+@{
+}
+
+<form method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="row mb-3">
+        <label for="inputPublisherName" class="col-sm-2 col-form-label">Publisher Name:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputPublisherName" asp-for="NewPublisher.PublisherName" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="inputPublisherAddress1" class="col-sm-2 col-form-label">Publisher Address1:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputPublisherAddress1" asp-for="NewPublisher.PublisherAddress1" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="inputPublisherAddress2" class="col-sm-2 col-form-label">Publisher Address2:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputPublisherAddress2" asp-for="NewPublisher.PublisherAddress2" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="inputPublisherCity" class="col-sm-2 col-form-label">Publisher City:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputPublisherCity" asp-for="NewPublisher.PublisherCity" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="inputPublisherState" class="col-sm-2 col-form-label">Publisher State:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputPublisherState" asp-for="NewPublisher.PublisherState" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="inputPublisherZip" class="col-sm-2 col-form-label">Publisher ZipCode:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputPublisherZip" asp-for="NewPublisher.PublisherZip" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="inputPublisherCountry" class="col-sm-2 col-form-label">Publisher Country:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputPublisherCountry" asp-for="NewPublisher.PublisherCountry" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="inputPublisherWebsite" class="col-sm-2 col-form-label">Publisher Website:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputPublisherWebsite" asp-for="NewPublisher.PublisherWebsite" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="=inputPublisherPhone" class="col-sm-2 col-form-label">Publisher Phone:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputPublisherPhone" asp-for="NewPublisher.PublisherPhone" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="inputPublisherLogo" class="col-sm-2 col-form-label">Publisher Logo:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputPublisherLogo" asp-for="NewPublisher.PublisherLogoURL" />
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary" onclick="return validateInput()">Add Publisher</button>
+</form>

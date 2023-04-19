@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VideoGameUI", "VideoGameUI\VideoGameUI.csproj", "{B1FA9A61-7F50-4959-93EC-463D47233367}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "VideoGameDB", "VideoGameDB\VideoGameDB.sqlproj", "{9A35F6ED-720C-4423-9EDE-827B3BBCDEF7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1FA9A61-7F50-4959-93EC-463D47233367}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1FA9A61-7F50-4959-93EC-463D47233367}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1FA9A61-7F50-4959-93EC-463D47233367}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1FA9A61-7F50-4959-93EC-463D47233367}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A35F6ED-720C-4423-9EDE-827B3BBCDEF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A35F6ED-720C-4423-9EDE-827B3BBCDEF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A35F6ED-720C-4423-9EDE-827B3BBCDEF7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{9A35F6ED-720C-4423-9EDE-827B3BBCDEF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A35F6ED-720C-4423-9EDE-827B3BBCDEF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A35F6ED-720C-4423-9EDE-827B3BBCDEF7}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C704FFE-B77B-47E1-9C07-0F2A9FA9E9A3}
+	EndGlobalSection
+EndGlobal

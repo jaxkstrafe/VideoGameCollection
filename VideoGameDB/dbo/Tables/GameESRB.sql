@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[GameESRB] (
+    [VideoGameID] INT NOT NULL,
+    [ESRBID]      INT NOT NULL,
+    CONSTRAINT [PK_GameESRB] PRIMARY KEY CLUSTERED ([VideoGameID] ASC, [ESRBID] ASC),
+    CONSTRAINT [FK_GameESRB_ESRB] FOREIGN KEY ([ESRBID]) REFERENCES [dbo].[ESRB] ([ESRBID]),
+    CONSTRAINT [FK_GameESRB_VideoGame] FOREIGN KEY ([VideoGameID]) REFERENCES [dbo].[VideoGame] ([VideoGameID])
+);
+

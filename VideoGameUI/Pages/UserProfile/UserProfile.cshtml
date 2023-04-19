@@ -1,0 +1,79 @@
+﻿@page
+@model VideoGameUI.Pages.UserProfile.IndexModel
+@{
+}
+@{
+    Layout = "";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SFA VIDEOGAME COLLECTION</title>
+    <link rel="stylesheet" href="~/css/UserProfile.css">
+</head>
+<body>
+    <div class="title_cover">
+        <div class="title_content">
+            <button class="title_button"><a href="/LoginPage/LoginSignUp">LOG IN / SIGN UP</a></button>
+            <h1 class="title_text">WELCOME TO SFA VIDEO GAME COLLECTION!</h1>
+        </div>
+    </div>
+
+    <nav class="nav_bar">
+        <div class="navbar_container">
+            <div class="nav_menu">
+                <ul class="navbar_menu">
+                    <li class="navbar__item">
+                        <a href="/" class="navbar_links">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/GamesCollection/GamesCollection" class="navbar_links">Games</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/CommunityRatings/CommunityRatings" class="navbar_links">Community Ratings</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/TemplatePage/Template" class="navbar_links">Upcoming Releases</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/UserLists/UserLists" class="navbar_links">Public Lists</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main_content">
+        <div class="Profile_Info">
+            <div class="Img_Test">
+            </div>
+            <img src="Xs_ProfilePic" alt="Xs Profile Picture">
+            <div class="Xs_Profile">
+                <h1>X's Profile</h1>
+            </div>
+            <div class="About_Me">
+                <h4>About Me:</h4>
+                <div class="About_Container">
+                </div>
+            </div>
+            <div class="Latest_List">
+                <h1>Latest List</h1>
+                <div class="List_Container">
+                </div>
+            </div>
+            <div class="Rated_Games">
+                <h1>Rated Games</h1>
+                <div class="Rated_Container">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

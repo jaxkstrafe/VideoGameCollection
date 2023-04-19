@@ -1,0 +1,71 @@
+﻿@page
+@model VideoGameUI.Pages.AddItems.AddDeveloperModel
+@{
+}
+
+
+
+<form method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="row mb-3">
+        <label for="inputDevName" class="col-sm-2 col-form-label">Dev Name:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputDevName" asp-for="NewDeveloper.DevName"/>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="inputDevAddress1" class="col-sm-2 col-form-label">Dev Address1:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputDevAddress1" asp-for="NewDeveloper.DevAddress1" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="inputDevAddress2" class="col-sm-2 col-form-label">Dev Address2:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputDevAddress2" asp-for="NewDeveloper.DevAddress2" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="inputDevCity" class="col-sm-2 col-form-label">Dev City:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputDevCity" asp-for="NewDeveloper.DevCity" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="inputDevState" class="col-sm-2 col-form-label">Dev State:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputDevState" asp-for="NewDeveloper.DevState" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="inputDevZip" class="col-sm-2 col-form-label">Dev ZipCode:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputDevZip" asp-for="NewDeveloper.DevZip" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="inputDevCountry" class="col-sm-2 col-form-label">Dev Country:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputDevCountry" asp-for="NewDeveloper.DevCountry" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="inputDevWebsite" class="col-sm-2 col-form-label">Dev Website:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputDevWebsite" asp-for="NewDeveloper.DevWebsite" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="=inputDevPhone" class="col-sm-2 col-form-label">Dev Phone:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputDevPhone" asp-for="NewDeveloper.DevPhone" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="inputDevLogo" class="col-sm-2 col-form-label">Dev Logo:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputDevLogo" asp-for="NewDeveloper.DevLogoURL" />
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary" onclick="return validateInput()">Add Developer</button>
+</form>

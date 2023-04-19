@@ -1,0 +1,249 @@
+﻿* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: rgb(92,26,154);
+}
+
+/*TITLE SECTION*/
+.title_cover {
+    width: auto;
+    height: 100px;
+    background-color: blueviolet;
+}
+
+.title_text {
+    font-weight: bold;
+    background-color: whitesmoke;
+    text-align: center;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-decoration-line: underline;
+}
+
+
+.title_cover button {
+    font-family: system-ui, sans-serif;
+    font-size: 25px;
+    cursor: pointer;
+    padding: .1em .6em;
+    font-weight: bold;
+    border: solid;
+    border-color: mediumpurple
+}
+
+/*BUTTON SECTION*/
+
+.title_button {
+    font-size: 1rem;
+    background-color: aliceblue;
+    border: none;
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+}
+
+    .title_button a {
+        position: relative;
+        z-index: 2;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+
+    .title_button::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: mediumpurple;
+        transition: all 0.35s;
+    }
+
+    .title_button:hover {
+        color: #fff;
+    }
+
+        .title_button:hover::after {
+            width: 100%
+        }
+
+
+/*NAV BAR SECTION*/
+
+.nav_bar {
+    background: rgb(255, 255, 255);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    border: solid;
+    border-color: grey;
+}
+
+.navbar_menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar_item {
+    height: 80px;
+}
+
+.navbar_links {
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 1rem;
+    height: 80px;
+    width: 390px;
+    border: solid;
+    border-radius: 0rem;
+    border-color: grey;
+}
+
+    .navbar_links:hover {
+        color: rgb(122, 18, 207);
+        transition: all 0.9s ease;
+        text-decoration: underline;
+    }
+
+.static_container {
+    height: 60px;
+    width: 1810px;
+    border: solid;
+    border-color: grey;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.name {
+    border-right: solid;
+    border-color: black;
+    height: 60px;
+    line-height: 50px;
+    width: 550px;
+    text-align: center;
+    justify-content: center;
+}
+
+.year_released {
+    border-right: solid;
+    border-color: black;
+    height: 60px;
+    line-height: 50px;
+    width: 305px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 550px;
+    margin-top: -60px;
+}
+
+.genre {
+    border-right: solid;
+    border-color: black;
+    height: 60px;
+    line-height: 50px;
+    width: 200px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 855px;
+    margin-top: -60px;
+}
+
+.esrb_rating {
+    border-right: solid;
+    border-color: black;
+    height: 60px;
+    line-height: 50px;
+    width: 300px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 1055px;
+    margin-top: -60px;
+}
+
+.platform {
+    border-right: solid;
+    border-color: black;
+    height: 60px;
+    line-height: 50px;
+    width: 240px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 1355px;
+    margin-top: -60px;
+}
+
+.cost {
+    border-right: solid;
+    border-color: black;
+    height: 60px;
+    line-height: 50px;
+    width: 210px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 1595px;
+    margin-top: -60px;
+}
+
+.dynamic_container {
+    height: 250px;
+    width: 1810px;
+    border: solid;
+    border-color: grey;
+    margin-left: 30px;
+}
+
+.game_img {
+    height: 245px;
+    width: 245px;
+    border-color: grey;
+}
+
+.esrb_img {
+    border-color: grey;
+    margin-left: 260px;
+    margin-top: -21px;
+    height: 90px;
+    width: 90px;
+}
+
+.rating {
+    text-align: center;
+    height: 80px;
+    width: 90px;
+    margin-left: 260px;
+    margin-top: 25px;
+}
+
+.publisher {
+    margin-left: 258px;
+    margin-top: -20px;
+    height: 80px;
+    width: 100px;
+    text-align: center;
+}
+
+.description {
+}
