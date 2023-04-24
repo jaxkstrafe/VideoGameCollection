@@ -13,7 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SFA VIDEOGAME COLLECTION</title>
-    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/CreatingList.css" />
 </head>
 <body>
     <div class="title_cover">
@@ -37,7 +37,7 @@
                         <a href="/CommunityRatings/CommunityRatings" class="navbar_links">Community Ratings</a>
                     </li>
                     <li class="navbar__item">
-                        <a href="/NewReleases/NewReleases" class="navbar_links">Upcoming Releases</a>
+                        <a href="/NewReleases/NewReleases" class="navbar_links">New Releases</a>
                     </li>
                     <li class="navbar__item">
                         <a href="/UserLists/UserLists" class="navbar_links">Public Lists</a>
@@ -47,7 +47,50 @@
         </div>
     </nav>
     <div class="main_content">
-            
+        <div class="main_container">
+            <center>
+                <form method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="selectContent">
+                        <label for="inputGameTitle" class="listLabel">List Title:</label>
+                        <div class="inputName">
+                            <input type="text" class="form-control" id="inputGameTitle" asp-for="NewLists.ListName" />
+                        </div>
+                    </div>
+                    <div class="selectContent">
+                        <label for="ddlGame" class="listLabel">Choose Game:</label>
+                        <div class="inputGame">
+                            <select asp-for="NewLists.VideoGameID" asp-items="@Model.VideoGameList" id="ddlGame"></select>
+                        </div>
+                    </div>
+                    <div class="selectContent">
+                        <label for="ddlGame" class="listLabel">Choose Game:</label>
+                        <div class="inputGame">
+                            <select asp-for="NewLists.VideoGameID" asp-items="@Model.VideoGameList" id="ddlGame"></select>
+                        </div>
+                    </div>
+                    <div class="selectContent">
+                        <label for="ddlGame" class="listLabel">Choose Game:</label>
+                        <div class="inputGame">
+                            <select asp-for="NewLists.VideoGameID" asp-items="@Model.VideoGameList" id="ddlGame"></select>
+                        </div>
+                    </div>
+                    <div class="selectContent">
+                        <label for="ddlGame" class="listLabel">Choose Game:</label>
+                        <div class="inputGame">
+                            <select asp-for="NewLists.VideoGameID" asp-items="@Model.VideoGameList" id="ddlGame"></select>
+                        </div>
+                    </div>
+                    <div class="selectContent">
+                        <label for="ddlGame" class="listLabel">Choose Game:</label>
+                        <div class="inputGame">
+                            <select asp-for="NewLists.VideoGameID" asp-items="@Model.VideoGameList" id="ddlGame"></select>
+                        </div>
+                    </div>
+                    <button type="submit" class="submitBtn" onclick="return validateInput()">Create List!</button>
+                </form>
+            </center>
+        </div>
     </div>
 </body>
 </html>

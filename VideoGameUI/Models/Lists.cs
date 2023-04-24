@@ -8,6 +8,7 @@ namespace VideoGameUI.Models
     {
         [Key]
         public int ListID { get; set; }
+        public string? ListName { get; set; }
         public string? Username { get; set; }
         public int ListSize { get; set; }
         public int VideoGameID { get; set; }

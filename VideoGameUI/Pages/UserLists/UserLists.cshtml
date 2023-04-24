@@ -13,7 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SFA VIDEOGAME COLLECTION</title>
-    <link rel="stylesheet" href="~/css/site.css"/>
+    <link rel="stylesheet" href="~/css/UserLists.css" />
 </head>
 <body>
     <div class="title_cover">
@@ -37,7 +37,7 @@
                         <a href="/CommunityRatings/CommunityRatings" class="navbar_links">Community Ratings</a>
                     </li>
                     <li class="navbar__item">
-                        <a href="/NewReleases/NewReleases" class="navbar_links">Upcoming Releases</a>
+                        <a href="/NewReleases/NewReleases" class="navbar_links">New Releases</a>
                     </li>
                     <li class="navbar__item">
                         <a href="/UserLists/UserLists" class="navbar_links">Public Lists</a>
@@ -47,7 +47,31 @@
         </div>
     </nav>
     <div class="main_content">
-        <button class="createList_button"><a href="CreateList">Create Your List</a></button>
+        <div class="main_container">
+            <div class="btnContainer">
+                <button class="createListBtn"><a href="CreateList">Create Your List</a></button>
+            </div>
+            @foreach (var obj in Model.UserLists)
+            {
+                <div class="">
+                    <div class="game_content">
+                        <div class="game_row">
+                            <div class="game_title">
+                                <h1 class="gameTitle">@obj.ListName</h1>
+                            </div>
+                            <div class="data_container">
+                                <div class="game_data">
+                                    <h2 class="dataText">Game: $@obj.VideoGameID</h2>
+                                </div>
+                                <div class="game_data">
+                                    <h2 class="dataText">Created: @obj.Created.ToString("MM/dd/yyyy")</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
     </div>
 </body>
 </html>
